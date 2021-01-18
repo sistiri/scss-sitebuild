@@ -1,0 +1,37 @@
+@debug --------------MATH--------------;
+
+@debug 10s + 5s;
+@debug 10s - 50ms;
+@debug 10px * 2;
+@debug 10px * 2px;
+@debug (10px / 2);
+@debug (10px / 2px);
+@debug 10px % 2;
+@debug 10px % 2px;
+
+
+@debug --------------STRING-------------;
+@debug "Times " + "New Roman";
+@debug #{"track" + "list"};
+
+.container::before {
+    font: 16px/16px "Times " + "New Roman", Times, serif;
+    content: track - list
+}
+
+$postfix: "--10";
+.col#{$postfix}::before {
+    font: 16px/16px "Times " + "New Roman", Times, serif;
+    content: track - list
+}
+
+
+@debug --------------BOOLEAN-------------;
+
+@debug not true;
+@debug not false;
+@debug true and false;
+@debug false and false;
+@debug true and true;
+@debug true or false;
+

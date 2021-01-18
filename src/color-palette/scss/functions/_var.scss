@@ -1,0 +1,18 @@
+@use "../variables/colors";
+@use "get-keys" as *;
+@use "sass:map";
+// @use "sass:list";
+
+@function var($string, $data: colors.$colors) {
+    $keys: get-keys($string);
+    // @debug type-of($value: list.nth($keys, 1));  //string
+    // @debug type-of(red);                         //color
+    @each $key in $keys {
+        // @debug $data;
+        $data: map.get($data, $key);
+    }
+    @return $data
+};
+
+// @debug var(theme-red);       // null
+// @debug var(theme-bluegrey); // #607D8B

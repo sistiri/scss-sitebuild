@@ -1,0 +1,13 @@
+@function var($string, $data: $config) {
+    $keys: get-keys($string);
+    // @debug type-of($value: list.nth($keys, 1));  //string
+    // @debug type-of(red);                         //color
+    @each $key in $keys {
+        // @debug $data;
+        $data: map-get($data, $key);
+    }
+    @return $data
+};
+
+// @debug var(theme-red);       // null
+// @debug var(theme-bluegrey); // #607D8B

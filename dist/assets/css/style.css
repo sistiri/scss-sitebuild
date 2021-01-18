@@ -1,0 +1,223 @@
+/* A címsorok és menük betűtípusa: Catamaran, Helvetica, Arial, sans-serif
+Gombok szövege, felső menü linkek: Lato, Helvetica, Arial, sans-serif
+Bekezdések: Muli, Helvetica, Arial, sans-serif
+A Footer egységesen: Muli, Helvetica, Arial, sans-serif */
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('./grid.css');
+@import url('./color-palette.css');
+@import url('./hamburger-menu.css');
+@import url('./buttons.css');
+
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, display-1, display-2, display-3, display-4 {
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+
+h1 {
+    display: block;
+}
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.row {  /* from other src */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jumbotron {
+    height: 400px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.p-3 {
+    padding: 1rem;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+p {
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.text-light {
+    color: #f8f9fa;
+}
+
+.bg-pattern {
+    background-image: url(../img/bg-pattern.png);
+    background-color: blueviolet;
+    min-width: 100vw;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.demo-screen {
+    height: 77.5%;
+    left: 10.1%;
+    top: 11.4%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+
+.navbar, .btn {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+p {
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    
+    
+}
+
+footer {
+    font-family: Mulish, Helvetica, Arial, sans-serif;
+}
+
+/* .active {
+
+} */
+
+.phone-with-demo-screen {
+    position: relative;
+    display: block;
+    min-width: 334px;
+    max-width: 334px;
+}
+
+
+.demo-screen {
+    height: 77.5%;
+    left: 10.1%;
+    top: 11.4%;
+    position: absolute;
+    border-radius: 5px;
+    
+    
+}
+
+.jumbotron {
+    background: none
+}
+.bg-yellow {
+    background-color: rgb(253,202,77);
+}
+.btn-jumbotron:hover, .btn-jumbotron:focus, .btn-jumbotron:active {
+    color: #fff;
+    background-color: #fdcc52;
+    border-color: #fdcc52; /*set the color you want here*/
+    transition: 0.3ms;
+}
+
+.btn-jumbotron {
+    border-radius: 50px;
+    font-size: 70%;
+    letter-spacing: 3px;
+    opacity: 1;
+    max-width: 240px;
+
+}
+
+.btn-darkblue {
+    background-color: rgb(59,89,152);
+    color: white;
+}
+
+.bg-pattern {
+    background-image: url("../img/bg-pattern.png");
+    background-color: blueviolet;
+}
+
+.bg-cta {
+    background-image: url("../img/bg-cta.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.grid-card-icon {
+    color: rgb(172,51,99);
+}
+
+footer {
+    font-size: smaller;
+}
+
+.link-white {
+    color: white;
+}
+a.link-white:hover, a.link-white:focus, a.link-white:active {
+    text-decoration: none;
+    color: #fdcc52;
+}
+
+.navbar-custom {
+    color: #343a40;
+}
+
+.navbar-brand {
+    color: #343a40;
+}
+a.navbar-brand:hover, a.navbar-brand:focus, a.navbar-brand:active {
+    color: #fdcc52;
+}
+
+.btn-darkblue:hover {
+    color:white
+}
